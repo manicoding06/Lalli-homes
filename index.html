@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Estate Listings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dream Homes for Sale</h1>
+    <p>Find your perfect property</p>
+  </header>
+
+  <main class="listings">
+    <div class="property-card">
+      <img src="images/house1.jpg" alt="Modern Villa" />
+      <h2>Modern Villa</h2>
+      <p>3 Bed • 2 Bath • 2,000 sqft</p>
+      <a href="https://example.com/project1" target="_blank">View Listing</a>
+    </div>
+
+    <div class="property-card">
+      <img src="images/house2.jpg" alt="Urban Apartment" />
+      <h2>Urban Apartment</h2>
+      <p>2 Bed • 1 Bath • 1,100 sqft</p>
+      <a href="https://example.com/project2" target="_blank">View Listing</a>
+    </div>
+
+    <div class="property-card">
+      <img src="images/house3.jpg" alt="Country Home" />
+      <h2>Country Home</h2>
+      <p>4 Bed • 3 Bath • 2,500 sqft</p>
+      <a href="https://example.com/project3" target="_blank">View Listing</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Real Estate Company</p>
+  </footer>
+</body>
+</html>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.property-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1rem;
+}
+
+.property-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.property-card h2 {
+  margin: 1rem 0 0.5rem;
+}
+
+.property-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.property-card a:hover {
+  background: #2980b9;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
